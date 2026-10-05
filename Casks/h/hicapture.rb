@@ -1,6 +1,6 @@
 cask "hicapture" do
-  version "1.0.1"
-  sha256 "8d2fd90f8efdb64cba8014f2f06b4cdc5e027ebb213876688a7cd31ea607052a"
+  version "1.0.2"
+  sha256 "761c300afa877925ff8e74cf6647c12c6d78e91a56d83e7363608f04628edb07"
 
   url "https://hi-capture.com/assets/releases/hicapture-#{version}-macos.zip"
   name "HiCapture"
@@ -9,7 +9,7 @@ cask "hicapture" do
 
   livecheck do
     url "https://hi-capture.com/en"
-    regex(/href=.*?hicapture[._-]v?(\d+(?:\.\d+)+)[._-]macos\.zip/i)
+    regex(/href=.*?hicapture[._-]v?(\d+(?:\.\d+)+)[._-]macos\.dmg/i)
   end
 
   depends_on macos: :sonoma
